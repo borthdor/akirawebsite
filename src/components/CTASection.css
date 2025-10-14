@@ -1,0 +1,343 @@
+.cta-widget-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 100px 20px;
+}
+
+.cta-widget-container {
+  width: 100%;
+  max-width: 1282px;
+  height: 332px;
+  background-image: url('/assets/graphics/ctasection.svg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: background-size 0.4s ease;
+}
+
+.cta-widget-container:hover {
+  background-size: 105%;
+}
+
+.cta-widget-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  max-width: 600px;
+}
+
+.cta-widget-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cta-widget-subtitle {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.cta-widget-title {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.cta-widget-description {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.cta-widget-join-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 32px;
+  background-color: #55E7FF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #100E13;
+  letter-spacing: -0.2px;
+  width: fit-content;
+}
+
+.cta-widget-join-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(85, 231, 255, 0.4);
+}
+
+.cta-widget-join-button .button-text {
+  flex: 1;
+  text-align: left;
+}
+
+.cta-widget-join-button .button-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #100E13;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* CTA Review Card */
+.cta-review-card {
+  width: 320px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 0.82px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-review-card:hover {
+  transform: scale(1.03);
+}
+
+.cta-review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-review-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cta-review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #55E7FF 0%, #5B9EFF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #100E13;
+}
+
+.cta-review-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cta-review-name {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.cta-review-status {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cta-review-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.cta-review-text {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .cta-widget-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 400px;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .cta-widget-content-wrapper {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .cta-widget-description {
+    max-width: 100%;
+  }
+
+  .cta-review-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-widget-section {
+    padding: 0 16px 60px 16px;
+  }
+
+  .cta-widget-container {
+    padding: 50px 30px;
+    min-height: 380px;
+    gap: 35px;
+    background-size: cover;
+  }
+
+  .cta-widget-container:hover {
+    background-size: cover;
+  }
+
+  .cta-widget-content-wrapper {
+    gap: 30px;
+  }
+
+  .cta-widget-subtitle {
+    font-size: 12px;
+  }
+
+  .cta-widget-title {
+    font-size: 30px;
+  }
+
+  .cta-widget-description {
+    font-size: 14px;
+  }
+
+  .cta-widget-join-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 16px 28px;
+    font-size: 14px;
+  }
+
+  .cta-review-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-widget-section {
+    padding: 0 20px 40px 20px;
+  }
+
+  .cta-widget-container {
+    padding: 40px 25px;
+    min-height: 420px;
+    gap: 30px;
+    border-radius: 12px;
+  }
+
+  .cta-widget-content-wrapper {
+    gap: 25px;
+  }
+
+  .cta-widget-text-content {
+    gap: 6px;
+  }
+
+  .cta-widget-subtitle {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+
+  .cta-widget-title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .cta-widget-description {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .cta-widget-join-button {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 24px;
+    font-size: 14px;
+  }
+
+  .cta-widget-join-button .button-icon-wrapper {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cta-review-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .cta-review-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .cta-review-name {
+    font-size: 14px;
+  }
+
+  .cta-review-status {
+    font-size: 11px;
+  }
+
+  .cta-review-stars svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .cta-review-text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}

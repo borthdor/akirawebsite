@@ -1,0 +1,266 @@
+/* ============================================
+   BLOG PAGE - AKIRA DESIGN
+   ============================================ */
+
+.blog-page {
+  min-height: 100vh;
+  background-color: #100E13;
+  color: #ffffff;
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  padding: 120px 0 100px 0;
+}
+
+.blog-page-container {
+  max-width: 1304px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.blog-page-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.blog-page-intro {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.blog-page-title {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin: 0 0 23px 0;
+  color: white;
+}
+
+.blog-page-description {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ============================================
+   BLOG GRID
+   ============================================ */
+
+.blog-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+/* ============================================
+   LOADING STATE
+   ============================================ */
+
+.blog-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 20px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(85, 231, 255, 0.2);
+  border-top-color: #55E7FF;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blog-loading p {
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ============================================
+   EMPTY STATE
+   ============================================ */
+
+.blog-empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.blog-empty-state h2 {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.4px;
+}
+
+.blog-empty-state p {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0 0 30px 0;
+}
+
+.empty-state-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #55E7FF;
+  color: #100E13;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 45px;
+  padding: 0 12px 0 20px;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  height: 48px;
+  transition: all 0.3s ease;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.empty-state-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(85, 231, 255, 0.3);
+}
+
+.empty-state-button .button-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #100E13;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .blog-page-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-page {
+    padding: 40px 0 60px 0;
+  }
+
+  .blog-page-container {
+    padding: 0 16px;
+  }
+
+  .blog-page-header {
+    margin-bottom: 50px;
+  }
+
+  .blog-page-intro {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .blog-page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .blog-page-description {
+    font-size: 16px;
+  }
+
+  .blog-page-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .blog-empty-state {
+    padding: 60px 20px;
+  }
+
+  .blog-empty-state h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .blog-page {
+    padding: 30px 0 40px 0;
+  }
+
+  .blog-page-container {
+    padding: 0 20px;
+  }
+
+  .blog-page-header {
+    margin-bottom: 35px;
+  }
+
+  .blog-page-intro {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .blog-page-title {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .blog-page-description {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .blog-page-grid {
+    gap: 20px;
+  }
+
+  .blog-loading {
+    min-height: 300px;
+  }
+
+  .blog-empty-state {
+    padding: 40px 20px;
+  }
+
+  .blog-empty-state h2 {
+    font-size: 24px;
+  }
+
+  .blog-empty-state p {
+    font-size: 15px;
+  }
+
+  .empty-state-button {
+    width: 100%;
+    max-width: 100%;
+  }
+}

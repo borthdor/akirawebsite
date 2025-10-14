@@ -1,0 +1,678 @@
+/* ============================================
+   BLOG DETAIL PAGE - CLEAN 2-COLUMN LAYOUT
+   ============================================ */
+
+.blog-detail-page {
+  min-height: 100vh;
+  background-color: #100E13;
+  color: #ffffff;
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Wrapper */
+.blog-detail-wrapper {
+  max-width: 1304px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================
+   BACK BUTTON
+   ============================================ */
+
+.blog-detail-back-section {
+  margin-bottom: 40px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  color: #55E7FF;
+  transform: translateX(-4px);
+}
+
+/* ============================================
+   2-COLUMN LAYOUT
+   ============================================ */
+
+.blog-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ============================================
+   LEFT COLUMN - MAIN CONTENT
+   ============================================ */
+
+.blog-detail-main {
+  width: 100%;
+}
+
+/* Header */
+.blog-detail-header {
+  margin-bottom: 40px;
+}
+
+.blog-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(85, 231, 255, 0.1);
+  border: 1px solid rgba(85, 231, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #55E7FF;
+}
+
+.meta-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.blog-detail-title {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin: 0 0 20px 0;
+  color: #ffffff;
+}
+
+.blog-detail-excerpt {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+}
+
+/* Hero Image */
+.blog-detail-image {
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.blog-detail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content */
+.blog-detail-content {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.blog-detail-content p {
+  margin-bottom: 16px;
+}
+
+.blog-detail-content p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-detail-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 32px 0 16px 0;
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+.blog-detail-content h3:first-child {
+  margin-top: 0;
+}
+
+/* ============================================
+   RIGHT COLUMN - SIDEBAR
+   ============================================ */
+
+.blog-detail-sidebar {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Sidebar Section */
+.sidebar-section {
+  background: linear-gradient(
+    75deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.06) 48%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.sidebar-title {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.3px;
+}
+
+/* Sidebar Posts */
+.sidebar-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-post-card {
+  display: flex;
+  gap: 14px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar-post-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(85, 231, 255, 0.3);
+  transform: translateX(4px);
+}
+
+.sidebar-post-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.sidebar-post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar-post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+}
+
+.sidebar-post-category {
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #55E7FF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-post-title {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Sidebar CTA */
+.sidebar-cta {
+  background: linear-gradient(
+    135deg,
+    rgba(85, 231, 255, 0.08) 0%,
+    rgba(34, 221, 134, 0.08) 100%
+  );
+  border: 1px solid rgba(85, 231, 255, 0.2);
+  border-radius: 12px;
+  padding: 30px 24px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.sidebar-cta h3 {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.3px;
+}
+
+.sidebar-cta p {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+.sidebar-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #55E7FF;
+  color: #100E13;
+  border: none;
+  border-radius: 45px;
+  padding: 0 10px 0 18px;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  height: 40px;
+  transition: all 0.3s ease;
+  gap: 10px;
+  text-decoration: none;
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.sidebar-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(85, 231, 255, 0.4);
+}
+
+.sidebar-cta-button .button-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: #100E13;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   LOADING & ERROR STATES
+   ============================================ */
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 20px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(85, 231, 255, 0.2);
+  border-top-color: #55E7FF;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-state p {
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.container-narrow {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.error {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.error h2 {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.error-message {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 30px;
+}
+
+.error-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #55E7FF;
+  color: #100E13;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(85, 231, 255, 0.3);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .blog-detail-layout {
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+  }
+
+  .sidebar-post-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sidebar-post-title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-detail-page {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .blog-detail-wrapper {
+    padding: 0 16px;
+  }
+
+  .blog-detail-back-section {
+    margin-bottom: 30px;
+  }
+
+  .blog-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .blog-detail-sidebar {
+    position: static;
+  }
+
+  .blog-detail-header {
+    margin-bottom: 30px;
+  }
+
+  .blog-detail-meta {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .meta-badge {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .meta-date {
+    font-size: 12px;
+  }
+
+  .blog-detail-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .blog-detail-excerpt {
+    font-size: 16px;
+  }
+
+  .blog-detail-image {
+    margin-bottom: 30px;
+  }
+
+  .blog-detail-content {
+    font-size: 15px;
+  }
+
+  .sidebar-section {
+    padding: 20px;
+  }
+
+  .sidebar-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .sidebar-cta {
+    padding: 24px 20px;
+  }
+
+  .sidebar-cta h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .blog-detail-page {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .blog-detail-wrapper {
+    padding: 0 20px;
+  }
+
+  .blog-detail-back-section {
+    margin-bottom: 20px;
+  }
+
+  .back-button {
+    font-size: 13px;
+  }
+
+  .blog-detail-layout {
+    gap: 50px;
+  }
+
+  .blog-detail-header {
+    margin-bottom: 24px;
+  }
+
+  .blog-detail-meta {
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .meta-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .meta-date {
+    font-size: 11px;
+  }
+
+  .blog-detail-title {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 14px;
+  }
+
+  .blog-detail-excerpt {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .blog-detail-image {
+    margin-bottom: 24px;
+    border-radius: 10px;
+  }
+
+  .blog-detail-content {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .blog-detail-content p {
+    margin-bottom: 20px;
+  }
+
+  /* Sidebar - Full Width on Mobile */
+  .blog-detail-sidebar {
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .sidebar-section {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .sidebar-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .sidebar-posts {
+    gap: 14px;
+  }
+
+  .sidebar-post-card {
+    padding: 12px;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .sidebar-post-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sidebar-post-category {
+    font-size: 11px;
+  }
+
+  .sidebar-post-title {
+    font-size: 14px;
+  }
+
+  .sidebar-cta {
+    padding: 28px 24px;
+    width: 100%;
+  }
+
+  .sidebar-cta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-cta p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-cta-button {
+    max-width: 100%;
+    width: 100%;
+    height: 46px;
+    font-size: 15px;
+  }
+
+  .sidebar-cta-button .button-icon-wrapper {
+    width: 20px;
+    height: 20px;
+  }
+
+  .error-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
