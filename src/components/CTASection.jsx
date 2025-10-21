@@ -11,7 +11,7 @@ const CTASection = () => {
             <p className="cta-widget-subtitle">START YOUR JOURNEY TODAY</p>
             <h2 className="cta-widget-title">Ready to Take Action?</h2>
             <p className="cta-widget-description">
-              Join thousands of successful resellers who are already maximizing their profits with our platform.
+              Memberships are finite. Your opportunity could close without notice. When you are serious about making $1,000s per month, we are ready to lead the way.
             </p>
           </div>
           
@@ -27,9 +27,9 @@ const CTASection = () => {
         <div className="cta-review-card">
           <div className="cta-review-header">
             <div className="cta-review-profile">
-              <div className="cta-review-avatar">JD</div>
+              <div className="cta-review-avatar">SN</div>
               <div className="cta-review-info">
-                <div className="cta-review-name">John Doe</div>
+                <div className="cta-review-name">Samuel N.</div>
                 <div className="cta-review-status">Member</div>
               </div>
             </div>
