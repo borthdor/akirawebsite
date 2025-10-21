@@ -15,12 +15,12 @@ const CTASection = () => {
             </p>
           </div>
           
-          <button className="cta-widget-join-button">
+          <a href="https://whop.com/c/akira/website" target="_blank" rel="noopener noreferrer" className="cta-widget-join-button">
             <span className="button-text">Join Now</span>
             <div className="button-icon-wrapper">
               <ArrowRight size={12} color="#ffffff" strokeWidth={2.5} />
             </div>
-          </button>
+          </a>
         </div>
 
         {/* Review Card */}

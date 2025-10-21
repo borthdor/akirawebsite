@@ -102,7 +102,7 @@ function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/TheAkiraGroup" target="_blank" rel="noopener noreferrer">
                       <Twitter size={16} className="footer-icon" />
                       <span>Twitter</span>
                     </a>

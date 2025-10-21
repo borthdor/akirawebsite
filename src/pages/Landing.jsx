@@ -302,12 +302,12 @@ function Landing() {
           
           {/* CTA Section - moved outside hero-left for mobile layout */}
           <div className="cta-section">
-            <button className="join-button">
+            <a href="https://whop.com/c/akira/website" target="_blank" rel="noopener noreferrer" className="join-button">
               <span className="button-text">Join Now</span>
               <div className="button-icon-wrapper">
                 <ArrowRight size={12} color="#ffffff" strokeWidth={2.5} />
               </div>
-            </button>
+            </a>
             
             <div className="learn-more">
               <span>Learn more</span>
@@ -639,12 +639,12 @@ function Landing() {
               Any other questions?<br />
               Join our discord to learn more
             </p>
-            <button className="faq-cta-button">
+            <a href="https://discord.gg/akira" target="_blank" rel="noopener noreferrer" className="faq-cta-button">
               <span className="button-text">Join Discord</span>
               <div className="button-icon-wrapper">
                 <ArrowRight size={12} color="#ffffff" strokeWidth={2.5} />
               </div>
-            </button>
+            </a>
           </div>
         </div>
         </div>

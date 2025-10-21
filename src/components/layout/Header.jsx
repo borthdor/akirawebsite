@@ -91,13 +91,13 @@ function Header() {
           </nav>
 
           <div className="auth-section">
-            <a href="#signup" className="sign-up">Sign Up</a>
-            <Link to="/blog" className="dashboard-btn">
+            <a href="https://whop.com/c/akira/website" target="_blank" rel="noopener noreferrer" className="sign-up">Sign Up</a>
+            <a href="https://whop.com/c/akira/website" target="_blank" rel="noopener noreferrer" className="dashboard-btn">
               <span>Dashboard</span>
               <div className="icon-container">
                 <ArrowRight size={12} color="#fff" />
               </div>
-            </Link>
+            </a>
           </div>
 
           <button 
